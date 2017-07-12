@@ -5,6 +5,16 @@
 <!--        Anpassung an Enddevice-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.php" media="screen">
+        <script>
+$.ajax({
+  url: "index.php",
+  data: { param1: "value1", param2: "value2" },
+  type: "POST",
+  context: document.body
+}).done(function() {
+  // your code goes here
+});
+</script>
         
         <title>Test Website</title>       
     </head>
@@ -15,6 +25,7 @@
 
         
         <main>
+
           <?php include ("XMLParser.php");?>
         </main>
         
